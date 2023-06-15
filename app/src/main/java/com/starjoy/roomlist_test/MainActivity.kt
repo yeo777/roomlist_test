@@ -1,5 +1,7 @@
 package com.starjoy.roomlist_test
 
+import android.content.Intent
+import android.icu.text.Transliterator.Position
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.starjoy.roomlist_test.Adapter.RoomListAdapter
@@ -30,6 +32,18 @@ class MainActivity : AppCompatActivity() {
 
         mAdapter = RoomListAdapter(this,R.layout.room_list_item, mRoomList)
         binding.roomListView.adapter = mAdapter
+
+
+        binding.roomListView.setOnItemClickListener { parent, view, position, id ->
+
+            val clickedRoom = mRoomList[position]
+            val viewDetailIntent = Intent(this, ViewRoomDetailActivity::class.java)
+
+            viewDetailIntent.putExtra("roomdetail",clickedRoom)
+            startActivity(viewDetailIntent)
+
+
+        }
 
     }
 }

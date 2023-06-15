@@ -1,12 +1,13 @@
 package com.starjoy.roomlist_test.Datas
 
+import java.io.Serializable
 import java.text.NumberFormat
 import java.util.Locale
 
 class RoomDatas(val rValue:Int,
                 val rAddress : String,
                 val rStair : Int,
-                val rExplain : String) {
+                val rExplain : String): Serializable {
 
 
 
