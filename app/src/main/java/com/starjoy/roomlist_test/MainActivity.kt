@@ -21,12 +21,12 @@ class MainActivity : AppCompatActivity() {
         mBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        mRoomList.add(RoomDatas(80000000,"마포구 서교동",1,"\uD83D\uDE0A 망원/홍대역 풀옵션 넓은 원룸"))
-        mRoomList.add(RoomDatas(285000000,"마포구 서교동",3,"신혼부부의 보금자리 서교동 신축"))
-        mRoomList.add(RoomDatas(120000000,"마포구 서교동",-3,"★홍대입구역 인근 원룸 전세★"))
-        mRoomList.add(RoomDatas(120000000,"마포구 성산동",0,"♥♥강추!! 보세요!! 넓고 반듯한 원룸"))
-        mRoomList.add(RoomDatas(150000000,"마포구 망원동",2,"초역세권★ 베란다 공간 있는 원룸"))
-        mRoomList.add(RoomDatas(175000000,"마포구 연남동",-1,"※풀옵션 원룸 전세※"))
+        mRoomList.add(RoomDatas(8000,"마포구 서교동",1,"\uD83D\uDE0A 망원/홍대역 풀옵션 넓은 원룸"))
+        mRoomList.add(RoomDatas(28500,"마포구 서교동",3,"신혼부부의 보금자리 서교동 신축"))
+        mRoomList.add(RoomDatas(12000,"마포구 서교동",-3,"★홍대입구역 인근 원룸 전세★"))
+        mRoomList.add(RoomDatas(12000,"마포구 성산동",0,"♥♥강추!! 보세요!! 넓고 반듯한 원룸"))
+        mRoomList.add(RoomDatas(15000,"마포구 망원동",2,"초역세권★ 베란다 공간 있는 원룸"))
+        mRoomList.add(RoomDatas(17500,"마포구 연남동",-1,"※풀옵션 원룸 전세※"))
 
         mAdapter = RoomListAdapter(this,R.layout.room_list_item, mRoomList)
         binding.roomListView.adapter = mAdapter
