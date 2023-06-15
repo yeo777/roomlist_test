@@ -34,10 +34,11 @@ class RoomListAdapter(
         val rStairTxt = row.findViewById<TextView>(R.id.stairTxt)
         val rExplainTxt = row.findViewById<TextView>(R.id.explainTxt)
 
-        rValueTxt.text = RoomList.rValue.toString()
+
         rAddressTxt.text = RoomList.rAddress
-        rStairTxt.text = "${RoomList.rStair}층"
         rExplainTxt.text = RoomList.rExplain
+        rStairTxt.text = "${RoomList.rStair}층"
+        rValueTxt.text = RoomList.rValue.toString()
 
 
         return row
