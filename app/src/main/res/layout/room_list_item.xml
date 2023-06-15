@@ -6,59 +6,74 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="10dp">
+        android:layout_height="wrap_content">
 
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="2억 8000"
-            android:textSize="25dp"
-            android:textStyle="bold"
-            android:textColor="#FF8C00"
-            android:id="@+id/valueTxt"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:padding="5dp">
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ㅇㅇ시 ㅇㅇ동,"
+                android:text="2억 8000"
+                android:textSize="23sp"
                 android:textStyle="bold"
-                android:textSize="20dp"
-                android:textColor="@color/black"
-                android:id="@+id/addressTxt" />
+                android:textColor="#FFA509"
+                android:id="@+id/valueTxt"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ㅇㅇ시 ㅇㅇ동,"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:id="@+id/addressTxt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0층"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/stairTxt" />
+
+
+            </LinearLayout>
+
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0층"
-                android:textStyle="bold"
-                android:textSize="20dp"
-                android:textColor="@color/black"
-                android:layout_marginLeft="10dp"
-                android:id="@+id/stairTxt" />
+                android:text="이 방은 어쩌구 저쩌구 님들이 좋아할 방"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:id="@+id/explainTxt" />
 
 
         </LinearLayout>
 
-
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="이 방은 어쩌구 저쩌구 님들이 좋아할 방입니다^^"
-            android:textSize="15dp"
-            android:id="@+id/explainTxt" />
-
-
-
     </LinearLayout>
+
+
 
 </LinearLayout>
