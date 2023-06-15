@@ -33,15 +33,14 @@
                 android:id="@+id/valueTxt"/>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="ㅇㅇ시 ㅇㅇ동,"
+                    android:text="ㅇㅇ시 ㅇㅇ동, "
                     android:textStyle="bold"
                     android:textSize="18sp"
                     android:textColor="@color/black"
@@ -54,7 +53,6 @@
                     android:textStyle="bold"
                     android:textSize="18sp"
                     android:textColor="@color/black"
-                    android:layout_marginLeft="10dp"
                     android:id="@+id/stairTxt" />
 
 

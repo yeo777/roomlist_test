@@ -37,7 +37,7 @@ class RoomListAdapter(
 
         rAddressTxt.text = RoomList.rAddress
         rExplainTxt.text = RoomList.rExplain
-        rStairTxt.text = "${RoomList.rStair}층"
+        rStairTxt.text = ", ${RoomList.getFormattedStair()}"
         rValueTxt.text = RoomList.rValue.toString()
 
 
