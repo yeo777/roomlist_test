@@ -29,7 +29,8 @@
             android:text="전세 3억 4000"
             android:textSize="25sp"
             android:textStyle="bold"
-            android:textColor="@color/black"/>
+            android:textColor="@color/black"
+            android:id="@+id/valueTxt"/>
 
 
         <TextView
@@ -38,7 +39,8 @@
             android:text="방배동 럭셔리 신축 분리형 원룸 확장 안한 올 수리 전세 매물 즉시 입주 가능"
             android:textAlignment="center"
             android:textSize="16sp"
-            android:layout_marginTop="8dp"/>
+            android:layout_marginTop="8dp"
+            android:id="@+id/explainTxt"/>
 
 
     </LinearLayout>
@@ -71,7 +73,8 @@
                 android:layout_height="wrap_content"
                 android:text="서울시 중랑구 면목동"
                 android:textColor="@color/black"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:id="@+id/addressTxt"/>
 
 
         </LinearLayout>
@@ -103,7 +106,8 @@
                 android:layout_height="wrap_content"
                 android:text="7층"
                 android:textColor="@color/black"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:id="@+id/stairTxt"/>
 
 
         </LinearLayout>
@@ -167,7 +171,8 @@
                 android:layout_height="wrap_content"
                 android:text="2023.06.15"
                 android:textColor="@color/black"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:id="@+id/DateTxt"/>
 
 
         </LinearLayout>
